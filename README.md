@@ -19,5 +19,5 @@ This Python script is a URL shortener with a Pygame graphical user interface (GU
    pip install pyshorteners
    pip install pygame
    pip install pygame_gui
-3. Replace "urlIcon.png" at line-12(shortener.py) with "/full/path/to/your/directory/urlIcon.png"
+3. Replace "C:\Users\Rohith Goje\pygame\URL-Shortener\urlIcon.png" at line-12(shortener.py) with "/full/path/to/your/directory/urlIcon.png".
   (Replace "/full/path/to/your/directory/" with the actual path to the directory where the urlIcon.png file is located).
