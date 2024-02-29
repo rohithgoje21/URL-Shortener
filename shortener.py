@@ -9,7 +9,7 @@ pygame.init()
 screen=pygame.display.set_mode((800,600))
 manager=pygame_gui.UIManager((800,600))
 pygame.display.set_caption("URL Shortener")
-icon=pygame.image.load("urlIcon.png")
+icon=pygame.image.load("C:\Users\Rohith Goje\pygame\URL-Shortener\urlIcon.png") #Replace it with the actual path to the directory where the urlIcon.png file is located
 pygame.display.set_icon(icon)
 
 font=pygame.font.SysFont(None,60)
