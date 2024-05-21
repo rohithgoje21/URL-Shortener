@@ -14,10 +14,9 @@ This Python script is a URL shortener with a Pygame graphical user interface (GU
 1. Clone the repository to your local machine.
    ```bash
    git clone https://github.com/rohithgoje21/URL-Shortener.git
-   
-2. Install required dependencies.
+2. cd URL-Shortener 
+3. Install required dependencies.
    pip install pyshorteners
    pip install pygame
    pip install pygame_gui
-3. Replace "C:\Users\Rohith Goje\pygame\URL-Shortener\urlIcon.png" at line-12(shortener.py) with "/full/path/to/your/directory/urlIcon.png".
-  (Replace "/full/path/to/your/directory/" with the actual path to the directory where the urlIcon.png file is located).
+
