@@ -25,7 +25,7 @@ buttonRect=pygame.Rect(50,300,90,40)
 button=pygame_gui.elements.UIButton(text="Generate",relative_rect=buttonRect)
 
 
-shortenURLRect=pygame.Rect(140,390,500,40)
+shortenURLRect=pygame.Rect(50,390,630,40)
 
 def url_Convert(inputURL):
     type_tiny = pyshorteners.Shortener()
