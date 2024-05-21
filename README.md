@@ -16,7 +16,7 @@ This Python script is a URL shortener with a Pygame graphical user interface (GU
    git clone https://github.com/rohithgoje21/URL-Shortener.git
 2. cd URL-Shortener 
 3. Install required dependencies.
-   pip install pyshorteners
-   pip install pygame
-   pip install pygame_gui
+-   pip install pyshorteners
+-   pip install pygame
+-   pip install pygame_gui
 
