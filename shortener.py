@@ -1,4 +1,3 @@
-
 import pyshorteners
 import pygame
 import sys
@@ -9,7 +8,7 @@ pygame.init()
 screen=pygame.display.set_mode((800,600))
 manager=pygame_gui.UIManager((800,600))
 pygame.display.set_caption("URL Shortener")
-icon=pygame.image.load("C:\Users\Rohith Goje\pygame\URL-Shortener\urlIcon.png") #Replace it with the actual path to the directory where the urlIcon.png file is located
+icon=pygame.image.load("./urlIcon.png")
 pygame.display.set_icon(icon)
 
 font=pygame.font.SysFont(None,60)
@@ -45,13 +44,18 @@ while True:
         if event.type==pygame.QUIT:
             pygame.quit()
             sys.exit()
+        elif event.type == pygame.KEYDOWN:
+            try:
+                if event.key == pygame.K_RETURN:
+                    url=url_Convert(inputURL.get_text())
+                    pygame_gui.elements.UITextEntryLine(initial_text=url,relative_rect=shortenURLRect)
+            except:
+                pygame_gui.elements.UITextBox(relative_rect=shortenURLRect,html_text="Please enter a url")
         if event.type==pygame_gui.UI_BUTTON_PRESSED:
             try:
                 if event.ui_element==button:
                     url=url_Convert(inputURL.get_text())
-                    ini=url
                     pygame_gui.elements.UITextEntryLine(initial_text=url,relative_rect=shortenURLRect)
-                
             except:
                 pygame_gui.elements.UITextBox(relative_rect=shortenURLRect,html_text="Please enter a url")
               
